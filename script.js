@@ -1,7 +1,6 @@
 "use strict";
 
 // завдання 1
-detonatorTimer(3);
 
 function detonatorTimer(delay) {
   let count = delay;
@@ -16,9 +15,9 @@ function detonatorTimer(delay) {
   }, 1000);
 }
 
-// завдання 2
-
 detonatorTimer(3);
+
+// завдання 2
 
 function detonatorTimer(delay) {
   let counter = delay;
@@ -30,11 +29,15 @@ function detonatorTimer(delay) {
         res();
       }, 1000);
     } else {
-      console.log("BOOM!");
+      setTimeout(() => {
+        console.log("BOOM!");
+      }, 1000);
     }
   };
   res();
 }
+
+detonatorTimer(3);
 
 // завдання 3
 
